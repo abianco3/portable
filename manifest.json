@@ -5,7 +5,8 @@
 	"description": "listen while you read",
 	"version": "1.0",
 	"permissions": [
-	"https://api.spotify.com/"
+	"https://api.spotify.com/",
+	"tabs"
 	],
 
 	"browser_action": {
@@ -24,7 +25,10 @@
 
 	"content_scripts": [
 	  {
-		"matches": ["*://www.theguardian.com/*"],
+		"matches": [
+		"*://pitchfork.com/*",
+		"*://www.theguardian.com/*"
+		],
 		"js": ["content.js"]
 	  }
 	]
