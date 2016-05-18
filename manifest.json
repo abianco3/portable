@@ -6,6 +6,11 @@
 	"version": "1.0",
 	"permissions": [
 	"https://api.spotify.com/",
+	"https://api.rovicorp.com/",
+	"https://accounts.spotify.com/authorize*",
+	"https://accounts.spotify.com/",
+	"identity",
+	"storage",
 	"tabs"
 	],
 
@@ -19,19 +24,24 @@
 	},
 
 	"background": {
-		"scripts": ["eventPage.js"],
+		"scripts": [
+		  "refactor.js",
+		  "eventPage.js"
+		  ],
 		"persistent": false
 	},
 
 	"content_scripts": [
 	  {
 		"matches": [
-		"*://pitchfork.com/*",
+		"<all_urls>",
 		"*://www.theguardian.com/*"
 		],
 		"js": ["content.js"]
 	  }
 	]
+
+	
 
 
 }

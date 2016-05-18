@@ -3,11 +3,18 @@ function makeTabObject (types) {
   types.forEach(function(type) {
   	var tag = document.getElementsByName(type);
   	console.log(tag);
-    keys[type] = tag[0]['content'];
+    content = tag[0] ? tag[0]['content'] : null;
+    if (content!=null) {
+      keys[type] = content;
+    }
   });
-  console.log(keys);
+
+  var p = document.getElementsByTagName("p");
+
+  console.log(p);
 
   return keys;
+
 }
 var searchTerms = makeTabObject(['author', 'keywords', 'description']);
 

@@ -7,12 +7,11 @@ document.addEventListener('DOMContentLoaded', function () {
     	var uri = link.href;
     	link.onclick = function () {
     		chrome.tabs.create({active: true, url: uri});
+
     	};
-    	link.appendChild(image);
-    	document.body.appendChild(link);
-
+      link.appendChild(image);
+      document.body.appendChild(link);
     });
-
 });
 
 
