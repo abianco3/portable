@@ -1,23 +1,80 @@
-function makeTabObject (types) {
-  var keys = {};
-  types.forEach(function(type) {
-  	var tag = document.getElementsByName(type);
-  	console.log(tag);
-    content = tag[0] ? tag[0]['content'] : null;
-    if (content!=null) {
-      keys[type] = content;
+function keyword () {
+
+  var uri, xhr, url, count, data;
+
+  uri = window.location.href;
+
+  xhr = new XMLHttpRequest();
+
+  url = 'http://gateway-a.watsonplatform.net/calls/url/URLGetRankedKeywords';
+
+  count = 0;
+
+  data = {
+
+    url : uri,
+
+    apikey : '0cc036f94105c0c5d39c36790a77146ab27ca3a1',
+
+    outputMode : 'json'
+
+  };
+
+  count = 0;
+
+  url += '?';
+
+  for (var key in data) {
+    if (data.hasOwnProperty(key)) {
+      if (count > 0) {
+        url += '&';
+      }
+      url += encodeURIComponent(key) + '=' + encodeURIComponent(data[key]);
+      count++;
     }
-  });
+  }
 
-  var p = document.getElementsByTagName("p");
+  xhr.open("GET", url);
 
-  console.log(p);
+  xhr.onload = function () {
+          
+    if (xhr.status >= 200 && xhr.status <= 300) {
+  
+      chrome.runtime.sendMessage(xhr.response);
+      
+    }
 
-  return keys;
+    else {
+        
+      console.log(xhr.response);
+    
+    }
+      
+  };
+
+
+  xhr.onerror = function () {
+  
+    console.log(xhr.response);
+
+  };
+
+  xhr.send();
 
 }
-var searchTerms = makeTabObject(['author', 'keywords', 'description']);
 
-console.log(searchTerms);
+keyword();
 
-chrome.runtime.sendMessage(searchTerms);
+chrome.runtime.onMessage.addListener(
+
+  function(message) {
+
+    if (message.content==='reload') {
+
+      keyword();
+    
+    }
+  
+  }
+
+);

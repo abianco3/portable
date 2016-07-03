@@ -9,6 +9,7 @@
 	"https://api.rovicorp.com/",
 	"https://accounts.spotify.com/authorize*",
 	"https://accounts.spotify.com/",
+	"http://gateway-a.watsonplatform.net/",
 	"identity",
 	"storage",
 	"tabs"
@@ -25,6 +26,7 @@
 
 	"background": {
 		"scripts": [
+		  
 		  "refactor.js",
 		  "eventPage.js"
 		  ],

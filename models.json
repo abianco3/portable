@@ -1,0 +1,153 @@
+{
+	"lang" : "en",
+	"description": "moods",
+	"categories" : [
+	  {
+	  	"name" : "happy",
+	  	"topics" : {
+	  		"https://en.wikipedia.org/wiki/Happiness" : "2.0",
+	  		"https://en.wikipedia.org/wiki/Holiday" : "1.0",
+	  		"https://en.wikipedia.org/wiki/Vacation" : "1.0",
+	  		"https://en.wikipedia.org/wiki/Love" : "1.0",
+	  		"https://en.wikipedia.org/wiki/Party" : "1.0",
+	  		"https://en.wikipedia.org/wiki/Festival" : "1.0",
+	  		"https://en.wikipedia.org/wiki/Sport" : "1.0",
+	  		"https://en.wikipedia.org/wiki/Baseball" : "1.0",
+	  		"https://en.wikipedia.org/wiki/Football" : "1.0",
+	  		"https://en.wikipedia.org/wiki/Basketball" : "1.0",
+	  		"https://en.wikipedia.org/wiki/Association_football" : "1.0",
+	  		"https://en.wikipedia.org/wiki/American_football" : "1.0",
+	  		"https://en.wikipedia.org/wiki/Child" : "1.0",
+	  		"https://en.wikipedia.org/wiki/Family" : "1.0",
+	  		"https://en.wikipedia.org/wiki/Beer" : "1.0",
+	  		"https://en.wikipedia.org/wiki/Alcohol" : "1.0",
+	  		"https://en.wikipedia.org/wiki/Sex" : "1.0",
+	  		"https://en.wikipedia.org/wiki/Christmas" : "1.0"
+	  	}
+	  },
+	  {
+	 	  "name" : "sad",
+	 	  "topics" : {
+	 	  	"https://en.wikipedia.org/wiki/Sadness" : "2.0",
+	 	  	"https://en.wikipedia.org/wiki/Death" : "1.0",
+	 	  	"https://en.wikipedia.org/wiki/Love" : "1.0",
+	 	  	"https://en.wikipedia.org/wiki/Alcohol" : "1.0",
+	 	  	"https://en.wikipedia.org/wiki/Depression_(mood)" : "1.0",
+	 	  	"https://en.wikipedia.org/wiki/Major_depressive_disorder" : "1.0",
+	 	  	"https://en.wikipedia.org/wiki/Michigan" : "1.0",
+	 	  	"https://en.wikipedia.org/wiki/Suicide" : "1.0",
+	 	  	"https://en.wikipedia.org/wiki/Family" : "1.0",
+	 	  	"https://en.wikipedia.org/wiki/Christmas" : "1.0"
+	 	  }
+	  },
+	  {
+	  	"name" : "angry",
+	  	"topics" : {
+	  		"https://en.wikipedia.org/wiki/Anger" : "2.0",
+	  		"https://en.wikipedia.org/wiki/War" : "1.0",
+	  		"https://en.wikipedia.org/wiki/Injustice" : "1.0",
+	  		"https://en.wikipedia.org/wiki/Politics" : "1.0",
+	  		"https://en.wikipedia.org/wiki/Abortion" : "1.0",
+	  		"https://en.wikipedia.org/wiki/Heavy_metal_music" : "1.0",
+	  		"https://en.wikipedia.org/wiki/Protest" : "1.0",
+	  		"https://en.wikipedia.org/wiki/Fire" : "1.0",
+	  		"https://en.wikipedia.org/wiki/N.W.A" : "1.0",
+	  		"https://en.wikipedia.org/wiki/Metallica" : "1.0",
+	  		"https://en.wikipedia.org/wiki/Gun" : "1.0",
+	  		"https://en.wikipedia.org/wiki/Gun_control" : "1.0",
+	  		"https://en.wikipedia.org/wiki/Donald_Trump" : "1.0"
+	  	}
+	  },
+	  {
+	  	"name" : "angst-ridden",
+	  	"topics" : {
+	  		"https://en.wikipedia.org/wiki/Angst" : "2.0",
+	  		"https://en.wikipedia.org/wiki/Adolescence" : "1.5",
+	  		"https://en.wikipedia.org/wiki/Slasher_film" : "1.0",
+	  		"https://en.wikipedia.org/wiki/Prom" : "1.0",
+	  		"https://en.wikipedia.org/wiki/Secondary_school" : "1.0",
+	  		"https://en.wikipedia.org/wiki/Young_adult_fiction" : "1.0",
+	  		"https://en.wikipedia.org/wiki/Emo" : "1.0",
+	  		"https://en.wikipedia.org/wiki/Puberty" : "1.0",
+	  		"https://en.wikipedia.org/wiki/Self-Harm" : "0.75",
+	  		"https://en.wikipedia.org/wiki/Suicide" : "0.5",
+	  		"https://en.wikipedia.org/wiki/Depression" : "0.5",
+	  		"https://en.wikipedia.org/wiki/Facebook" : "0.5",
+	  		"https://en.wikipedia.org/wiki/Snapchat" : "0.5"
+	  	}
+	  },
+	  {
+	  	"name" : "aggressive",
+	  	"topics" : {
+	  		"https://en.wikipedia.org/wiki/Aggression" : "2.0",
+	  		"https://en.wikipedia.org/wiki/"
+
+	  	}
+	  },
+	  {
+	  	"name" : "airy",
+	  	"topics" : {}
+	  },
+	  {
+	  	"name" : "bright",
+	  	"topics" : {}
+	  },
+	  {
+	  	"name" : "cerebral",
+	  	"topics" : {}
+	  },
+	  {
+	  	"name" : "dark",
+	  	"topics" : {}
+	  },
+	  {
+	  	"name" : "dramatic",
+	  	"topics" : {}
+	  },
+	  {
+	  	"name" : "druggy",
+	  	"topics" : {}
+	  },
+	  {
+	  	"name" : "fun",
+	  	"topics" : {}
+	  },
+	  {
+	  	"name" : "erotic",
+	  	"topics" : {}
+	  },
+	  {
+	  	"name" : "gloomy",
+	  	"topics" : {}
+	  },
+	  {
+	  	"name" : "hymn-like",
+	  	"topics" : {}
+	  },
+	  {
+	  	"name" : "hyper",
+	  	"topics" : {}
+	  },
+	  {
+	  	"name" : "innocent",
+	  	"topics" : {}
+	  },
+	  {
+	  	"name" : "literate",
+	  	"topics" : {}
+	  },
+	  {
+	  	"name" : "macabre",
+	  	"topics" : {}
+	  },
+	  {
+	  	"name" : "patriotic",
+	  	"topics" : {}
+	  },
+	  {
+	  	"name" : "visceral",
+	  	"topics" : {}
+	  }
+
+  ]
+}
